@@ -2,7 +2,7 @@
   "version": 2,
   "dgSpecHash": "ZjUNuj90LoYncBttnj3kv/k3g9MHTVa/b8c8bG+l+ijgU0Q1DSqZwEeXOP/05oZ8PEA7YhOt4qIT5mWqGUwH0g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\H1683\\workspace\\sandbox\\pdf-extractor\\pdf-extractor.csproj",
+  "projectFilePath": "C:\\Users\\H1683\\workspace\\sandbox\\cleaner\\cleaner.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\H1683\\.nuget\\packages\\bouncycastle\\1.8.9\\bouncycastle.1.8.9.nupkg.sha512",
     "C:\\Users\\H1683\\.nuget\\packages\\itextsharp\\5.5.13.3\\itextsharp.5.5.13.3.nupkg.sha512"

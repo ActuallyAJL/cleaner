@@ -67,11 +67,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\H1683\\workspace\\sandbox\\pdf-extractor\\pdf-extractor.csproj",
-      "projectName": "pdf-extractor",
-      "projectPath": "C:\\Users\\H1683\\workspace\\sandbox\\pdf-extractor\\pdf-extractor.csproj",
+      "projectUniqueName": "C:\\Users\\H1683\\workspace\\sandbox\\cleaner\\cleaner.csproj",
+      "projectName": "cleaner",
+      "projectPath": "C:\\Users\\H1683\\workspace\\sandbox\\cleaner\\cleaner.csproj",
       "packagesPath": "C:\\Users\\H1683\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\H1683\\workspace\\sandbox\\pdf-extractor\\obj\\",
+      "outputPath": "C:\\Users\\H1683\\workspace\\sandbox\\cleaner\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\H1683\\AppData\\Roaming\\NuGet\\NuGet.Config",
