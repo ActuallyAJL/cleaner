@@ -8,37 +8,38 @@ class Program
 {
     public static void Main(string[] args)
     {
-        try
+        if (args.Count() != 1)
         {
-            if (args.Count() != 1)
-            {
-                Console.WriteLine("This function can only accept a single argument. Please call again with a single argument indicating the file path to clean.");
-            }
-            else
-            {
-                recursivelyDeleteEmptyFolders(args[0]);
-            }
+            Console.WriteLine("This function can only accept a single argument. Please call again with a single argument indicating the file path to clean.");
         }
-        catch (Exception ex)
+        else
         {
-            Console.WriteLine(ex);
+            int i = 1;
+            i = recursivelyDeleteEmptyFolders(args[0], i);
+            Console.WriteLine($"Cleaning Complete. Successfully deleted {i} empty folders recursively.");
         }
     }
 
-    public static void recursivelyDeleteEmptyFolders(string startLocation)
+    public static int recursivelyDeleteEmptyFolders(string startLocation, int i)
     {
-        int i = 0;
         foreach (var directory in Directory.GetDirectories(startLocation))
         {
-            recursivelyDeleteEmptyFolders(directory);
-            if (Directory.GetFiles(directory).Length == 0 &&
-                Directory.GetDirectories(directory).Length == 0)
+            try
             {
-                Directory.Delete(directory, false);
-                Console.WriteLine($"Deleting {directory}");
-                i++;
+                recursivelyDeleteEmptyFolders(directory, i);
+                if (Directory.GetFiles(directory).Length == 0 &&
+                    Directory.GetDirectories(directory).Length == 0)
+                {
+                    Directory.Delete(directory, false);
+                    Console.WriteLine($"Deleting {directory}");
+                    i++;
+                }
+            }
+            catch
+            {
+                Console.WriteLine($"Unable to delete {directory}");
             }
         }
-        Console.WriteLine($"Cleaning Complete. Successfully deleted {i} empty folders recursively.");
+        return i;
     }
 }
